@@ -1,4 +1,4 @@
-import React, { Profiler } from "react";
+import React from "react";
 import profileImg from "../assets/portfolio/anon-image.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 

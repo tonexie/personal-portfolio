@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div
       name="home"
-      className={`${bgBlackToGray} bg-gradient-to-b from-black via-black to-gray-800`}
+      className={`${bgBlackToGray} md:pt-20 bg-gradient-to-b from-black via-black to-gray-800`}
     >
       <div
         className="max-w-screen-lg mx-auto 

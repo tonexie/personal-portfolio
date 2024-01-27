@@ -1,4 +1,5 @@
 import React from "react";
+import { bgBlackToGray } from "../tailwind-utils";
 import eigenCashImg from "../assets/portfolio/eigen-cash.png";
 import fourierLabsImg from "../assets/portfolio/fourier-labs.png";
 import g2BlogImg from "../assets/portfolio/g2-blog.png";
@@ -20,10 +21,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div
-      name="portfolio"
-      className="w-full bg-gradient-to-b from-black to-gray-800 text-white md:h-screen"
-    >
+    <div id="portfolio" className={bgBlackToGray}>
       <div className="max-w-screen-lg p-4 m-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">

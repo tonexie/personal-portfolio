@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill  } from "react-icons/bs";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const SocialLinks = () => {
   const links = [
@@ -37,7 +37,7 @@ const SocialLinks = () => {
       id: 4,
       child: (
         <>
-          Resume <BsFillPersonLinesFill  size={30} />
+          Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
       href: "/Resume_XIE_TONE.pdf",
@@ -49,7 +49,7 @@ const SocialLinks = () => {
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
       <ul>
-        {links.map(({id, child, href, style, download}) => (
+        {links.map(({ id, child, href, style, download }) => (
           <li
             key={id}
             className={

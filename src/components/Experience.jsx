@@ -1,4 +1,5 @@
 import React from "react";
+import { bgGrayToBlack } from "../tailwind-utils";
 import htmlIcon from "../assets/icons/html.svg";
 import cssIcon from "../assets/icons/css.svg";
 import jsIcon from "../assets/icons/js.svg";
@@ -13,7 +14,7 @@ import pythonIcon from "../assets/icons/python.svg";
 const Experience = () => {
   const technologies = [
     { id: 1, src: htmlIcon, name: "HTML", style: "shadow-orange-500" },
-    { id: 2, src: cssIcon, name: "CSS", style: "shadow-blue-500"},
+    { id: 2, src: cssIcon, name: "CSS", style: "shadow-blue-500" },
     { id: 3, src: jsIcon, name: "JavaScript" },
     { id: 4, src: reactIcon, name: "React" },
     { id: 5, src: vueIcon, name: "VueJs" },
@@ -21,14 +22,11 @@ const Experience = () => {
     { id: 7, src: expressIcon, name: "ExpressJs" },
     { id: 8, src: javaIcon, name: "Java" },
     { id: 9, src: sqlIcon, name: "SQL" },
-    { id: 9, src: pythonIcon, name: "Python" },
+    { id: 10, src: pythonIcon, name: "Python" },
   ];
 
   return (
-    <div
-      name="experience"
-      className="w-full bg-gradient-to-b from-gray-800 to-black text-white md:h-screen"
-    >
+    <div name="experience" className={bgGrayToBlack}>
       <div className="max-w-screen-lg p-4 m-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
@@ -41,7 +39,10 @@ const Experience = () => {
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
           {technologies.map(({ id, src, name, style }) => (
-            <div key={id} className={`shadow-md hover:scale-105 duration-300 py-2 rounded-lg ${style}`}>
+            <div
+              key={id}
+              className={`shadow-md hover:scale-105 duration-300 py-2 rounded-lg ${style}`}
+            >
               <img src={src} alt={`${src} icon`} className="m-auto w-20" />
               <p>{name}</p>
             </div>

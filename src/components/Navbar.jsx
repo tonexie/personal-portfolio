@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 // motion variables
 const variants = {
-  closed: { opacity: 0 },
+  closed: { opacity: 0, z: -1 },
 };
 
 export const Navbar = () => {
@@ -65,12 +65,13 @@ export const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white fixed bg-black shadow-md shadow-gray-900 opacity-90 z-10">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-white fixed
+     bg-black  opacity-90 z-10">
       <div>
         <h1 className="text-5xl font-signature ml-2">Tone</h1>
       </div>
 
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex order-4">
         {siteLinks.map(({ id, link, offset }) => (
           <li
             key={id}

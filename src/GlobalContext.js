@@ -4,7 +4,7 @@ const GlobalContext = createContext();
 
 export const GlobalContextProvider = ({ children }) => {
   const [gV, setGlobalVariable] = useState({
-    loadingDuration: 500,
+    loadingDuration: 1600,
     gV1: "",
   });
 

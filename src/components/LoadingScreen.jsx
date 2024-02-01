@@ -1,23 +1,23 @@
 import React from "react";
-import ClipLoader from "react-spinners/ClipLoader";
+import ClimbingBoxLoader
+from "react-spinners/ClimbingBoxLoader";
 
 const override = {
   display: "block",
-  margin: "0 auto",
-  borderColor: "red",
 };
 
 const LoadingScreen = ({ display }) => {
 
   return (
     <div
-      className="fixed flex w-full h-screen justify-center items-center content-center z-20 bg-white"
+      className={`bg-black fixed flex w-full h-screen justify-center items-center content-center z-20 `}
       style={{ display: display ? "flex" : "none" }}
     >
-      <ClipLoader
+      <ClimbingBoxLoader 
         color={"#ffffff"}
+        speedMultiplier={1.5}
         cssOverride={override}
-        size={150}
+        size={30}
         aria-label="Loading Spinner"
         data-testid="loader"
       />

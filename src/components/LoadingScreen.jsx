@@ -10,7 +10,7 @@ const LoadingScreen = ({ display }) => {
 
   return (
     <div
-      className={`bg-black fixed flex w-full h-screen justify-center items-center content-center z-20 `}
+      className={`bg-black fixed flex w-full h-screen justify-center items-center content-center z-30`}
       style={{ display: display ? "flex" : "none" }}
     >
       <ClimbingBoxLoader 

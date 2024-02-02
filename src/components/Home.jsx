@@ -26,10 +26,10 @@ const Home = () => {
     >
       <div
         name="home"
-        className={`z-1 relative w-full h-screen py-40 md:pt-[15rem] px-2 sm:px-12 text-white pt-24 bg-black overflow-visible`}
+        className={`z-1 relative w-full h-screen py-40 md:pt-[15rem] px-2 sm:px-12 text-white pt-24 bg-black overflow-visible overflow-x-clip`}
       >
         <motion.div
-          className="z-0 absolute top-0 left-0 w-full h-full bg-cover bg-home-background overflow-visible"
+          className="z-0 absolute top-0 left-0 w-full h-full bg-cover bg-home-background"
           style={{ backgroundPosition: "center 35%", scale, opacity }}
         />
         <div

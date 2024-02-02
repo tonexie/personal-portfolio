@@ -12,7 +12,7 @@ const CardFlip = ({ content }) => {
     }
   }
   return (
-    <div className="flip-card" onClick={handleFlip}>
+    <div className="flip-card " onClick={handleFlip}>
       <motion.div
         className="flip-card-inner w-full h-full"
         initial={false}

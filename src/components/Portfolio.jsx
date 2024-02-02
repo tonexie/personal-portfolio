@@ -3,8 +3,7 @@ import { bgGrayToBlack } from "../tailwind-utils";
 import eigenCashImg from "../assets/portfolio/eigen-cash.png";
 import fourierLabsImg from "../assets/portfolio/fourier-labs.png";
 import g2BlogImg from "../assets/portfolio/g2-blog.png";
-// import CardFlip from "./CardFlip";
-
+import CardFlip from "./CardFlip";
 
 const Portfolio = () => {
   const projects = [
@@ -36,27 +35,32 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-8 px-0 sm:p-2">
+        <div className="grid md:grid-cols-2 gap-8 px-0 sm:p-2">
           {projects.map(({ id, src, demo, code }) => (
-            <div key={id} className="shadow-md shadow-gray-800 rounded-lg">
-              <img
-                src={src}
-                alt={`${src} img`}
-                className="rounded-md hover:scale-105 duration-200"
-              />
-              <div className="flex items-center justify-center">
-                <a href={demo} target="_blank" rel="noreferrer">
-                  <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200">
-                    Demo
-                  </button>
-                </a>
-                <a href={code} target="_blank" rel="noreferrer">
-                  <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200">
-                    Code
-                  </button>
-                </a>
-              </div>
-            </div>
+            <CardFlip
+              className="w-full h-full"
+              content={
+                <div key={id} className="shadow-md shadow-gray-800 rounded-lg">
+                  <img
+                    src={src}
+                    alt={`${src} img`}
+                    className="rounded-md hover:scale-105 duration-200"
+                  />
+                  <div className="flex items-center justify-center">
+                    <a href={demo} target="_blank" rel="noreferrer">
+                      <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200">
+                        Demo
+                      </button>
+                    </a>
+                    <a href={code} target="_blank" rel="noreferrer">
+                      <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200">
+                        Code
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              }
+            />
           ))}
         </div>
       </div>

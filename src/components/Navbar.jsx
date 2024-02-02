@@ -5,20 +5,14 @@ import { useMediaQuery } from "react-responsive";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { motion } from "framer-motion";
-
-// motion variables
-const variants = {
-  closed: { opacity: 0, z: -1 },
-};
 
 export const Navbar = () => {
-  const [navIsOpen, setNav] = useState(false);
+  const [navMenu, setNav] = useState(false);
   const isDesktop = useMediaQuery({ minWidth: 768 });
 
   const siteLinks = [
     { id: 1, link: "home", offset: 0 },
-    { id: 2, link: "about", offset: 0 },
+    { id: 2, link: "about", offset: 150 },
     { id: 3, link: "portfolio", offset: 80 },
     { id: 4, link: "experience", offset: 80 },
     { id: 5, link: "contact", offset: 80 },
@@ -65,17 +59,16 @@ export const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white fixed
-     bg-black  opacity-90 z-10">
+    <div className="flex z-20 justify-between items-center w-full h-20 px-4 text-white fixed bg-black opacity-90">
       <div>
         <h1 className="text-5xl font-signature ml-2">Tone</h1>
       </div>
 
-      <ul className="hidden md:flex order-4">
+      <ul className="hidden md:flex">
         {siteLinks.map(({ id, link, offset }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-gray-300 hover:scale-105 duration-200"
+            className="px-4 cursor-pointer capitalize font-medium text-gray-200 hover:scale-105 duration-200"
           >
             <Link to={link} smooth duration={500} offset={offset}>
               {link}
@@ -85,29 +78,25 @@ export const Navbar = () => {
       </ul>
 
       <div
-        onClick={() => setNav(!navIsOpen)}
-        className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden order-3"
+        onClick={() => setNav(!navMenu)}
+        className="cursor-pointer pr-4 z-20 text-gray-500 md:hidden"
       >
-        {navIsOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
+        {navMenu ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
-      <motion.nav
-        animate={navIsOpen ? "open" : "closed"}
-        variants={variants}
-        transition={{ duration: 0.3 }}
-      >
-        <ul
+      {navMenu && (
+        <ul // navMenu needs to be true for this element to render
           className="flex flex-col justify-center items-center 
-      absolute top-0 left-0 w-full h-screen 
-      bg-gradient-to-b from-black to-gray-800 text-gray-500"
+      absolute top-0 left-0 w-full h-screen z-10 
+      bg-gradient-to-b from-black to-gray-800 text-gray-100"
         >
           {siteLinks.map(({ id, link, offset }) => (
             <li
               key={id}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl text-white"
+              className="px-4 cursor-pointer capitalize py-6 text-4xl"
             >
               <Link
-                onClick={() => setNav(!navIsOpen)}
+                onClick={() => setNav(!navMenu)}
                 to={link}
                 smooth
                 duration={500}
@@ -120,7 +109,10 @@ export const Navbar = () => {
 
           <div className="flex gap-8 mt-16">
             {socialLinks.map(({ id, child, href, download }) => (
-              <div key={id} className="flex gap-8">
+              <div
+                key={id}
+                className="flex gap-8"
+              >
                 <a
                   href={href}
                   className="w-full text-white"
@@ -134,7 +126,7 @@ export const Navbar = () => {
             ))}
           </div>
         </ul>
-      </motion.nav>
+      )}
     </div>
   );
 };

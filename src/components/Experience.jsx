@@ -1,5 +1,5 @@
 import React from "react";
-import { bgGrayToBlack } from "../tailwind-utils";
+import { bgBlackToGray } from "../tailwind-utils";
 import htmlIcon from "../assets/icons/html.svg";
 import cssIcon from "../assets/icons/css.svg";
 import jsIcon from "../assets/icons/js.svg";
@@ -90,7 +90,7 @@ const Experience = () => {
   ];
 
   return (
-    <div name="experience" className={bgGrayToBlack}>
+    <div name="experience" className={bgBlackToGray}>
       <div className="max-w-screen-lg p-4 m-auto flex flex-col justify-center w-full h-full">
         <div className="pb-0">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">

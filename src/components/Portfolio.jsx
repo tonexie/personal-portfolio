@@ -3,26 +3,30 @@ import { bgGrayToBlack } from "../tailwind-utils";
 import eigenCashImg from "../assets/portfolio/eigen-cash.png";
 import fourierLabsImg from "../assets/portfolio/fourier-labs.png";
 import g2BlogImg from "../assets/portfolio/g2-blog.png";
-import CardFlip from "./CardFlip";
+import CardFlip from "./animations/CardFlip";
 
 const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      src: eigenCashImg,
-      demo: "https://www.eigen.cash/",
-    },
-    {
-      id: 2,
-      src: fourierLabsImg,
-      demo: "https://fourierlabs.io/",
-    },
-    {
-      id: 3,
+      title:"Full Stack Blog Website",
       src: g2BlogImg,
       demo: "https://full-stack-blog-f6yb.onrender.com/",
       code: "https://github.com/tonexie/fullstack-blog",
     },
+    {
+      id: 2,
+      title:"Eigen Cash Website (InternShip)",
+      src: eigenCashImg,
+      demo: "https://www.eigen.cash/",
+    },
+    {
+      id: 3,
+      title:"Fourier Labs Landing Page (InternShip)",
+      src: fourierLabsImg,
+      demo: "https://fourierlabs.io/",
+    },
+  
   ];
 
   return (
@@ -36,28 +40,31 @@ const Portfolio = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 px-0 sm:p-2">
-          {projects.map(({ id, src, demo, code }) => (
+          {projects.map(({ id, title, src, demo, code }) => (
             <CardFlip
               className="w-full h-full"
-              content={
-                <div key={id} className="shadow-md shadow-gray-800 rounded-lg">
+              title={title}
+              front={
+                <div key={id} className="flex flex-col">
                   <img
                     src={src}
                     alt={`${src} img`}
-                    className="rounded-md hover:scale-105 duration-200"
+                    className="relative block rounded-md p-[1px]"
                   />
-                  <div className="flex items-center justify-center">
-                    <a href={demo} target="_blank" rel="noreferrer">
-                      <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200">
-                        Demo
-                      </button>
-                    </a>
-                    <a href={code} target="_blank" rel="noreferrer">
-                      <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200">
-                        Code
-                      </button>
-                    </a>
-                  </div>
+                </div>
+              }
+              back={
+                <div className="flex items-center justify-center">
+                  <a href={demo} target="_blank" rel="noreferrer">
+                    <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200">
+                      Demo
+                    </button>
+                  </a>
+                  <a href={code} target="_blank" rel="noreferrer">
+                    <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200">
+                      Code
+                    </button>
+                  </a>
                 </div>
               }
             />

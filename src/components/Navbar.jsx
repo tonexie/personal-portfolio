@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+// import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { useMediaQuery } from "react-responsive";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import MenuAnimated from "./animations/MenuAnimated";
 
 export const Navbar = () => {
   const [navMenu, setNav] = useState(false);
@@ -14,7 +15,7 @@ export const Navbar = () => {
     { id: 1, link: "home", offset: 0 },
     { id: 2, link: "about", offset: 150 },
     { id: 3, link: "portfolio", offset: 80 },
-    { id: 4, link: "experience", offset: 80 },
+    { id: 4, link: "skills", offset: 80 },
     { id: 5, link: "contact", offset: 80 },
   ];
 
@@ -79,13 +80,14 @@ export const Navbar = () => {
 
       <div
         onClick={() => setNav(!navMenu)}
-        className="cursor-pointer pr-4 z-20 text-gray-500 md:hidden"
+        className="cursor-pointer z-20 text-gray-500 md:hidden"
       >
-        {navMenu ? <FaTimes size={30} /> : <FaBars size={30} />}
+        <MenuAnimated active={navMenu} />
+        {/* {navMenu ? <FaTimes size={30} /> : <FaBars size={30} />} */}
       </div>
 
       {navMenu && (
-        <ul // navMenu needs to be true for this element to render
+        <ul // mobile view
           className="flex flex-col justify-center items-center 
       absolute top-0 left-0 w-full h-screen z-10 
       bg-gradient-to-b from-black to-gray-800 text-gray-100"
@@ -109,10 +111,7 @@ export const Navbar = () => {
 
           <div className="flex gap-8 mt-16">
             {socialLinks.map(({ id, child, href, download }) => (
-              <div
-                key={id}
-                className="flex gap-8"
-              >
+              <div key={id} className="flex gap-8">
                 <a
                   href={href}
                   className="w-full text-white"

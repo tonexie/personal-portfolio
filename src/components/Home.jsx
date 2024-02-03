@@ -1,19 +1,25 @@
 import React from "react";
 import { useGlobalContext } from "../GlobalContext";
-import profileImg from "../assets/portfolio/anon-image.png";
+import profileImg from "../assets/portfolio/civil-software1.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import { motion, MotionConfig, useScroll, useTransform } from "framer-motion";
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
+import { Typewriter } from "react-simple-typewriter";
 
 const Home = () => {
   const { gV } = useGlobalContext();
   const loadingDuration = gV.loadingDuration / 1000;
-  const isDesktop = useMediaQuery({ minWidth: 768 });
+  // const isDesktop = useMediaQuery({ minWidth: 768 });
 
+  // scroll animation for home image
   const { scrollY } = useScroll();
   const scale = useTransform(scrollY, [100, 1000], [1, 2]);
-  const opacity = useTransform(scrollY, [100, 600, 1000], [1, 0.2, 0]);
+  const opacity = useTransform(
+    scrollY,
+    [100, 300, 600, 1000],
+    [1, 0.3, 0.1, 0]
+  );
 
   return (
     <MotionConfig
@@ -26,19 +32,16 @@ const Home = () => {
     >
       <div
         name="home"
-        className={`z-1 relative w-full h-screen py-40 md:pt-[15rem] px-2 sm:px-12 text-white pt-24 bg-black overflow-visible overflow-x-clip`}
+        className={`z-1 relative w-full h-screen py-[6rem] md:py-40 px-2 sm:px-12 text-white bg-black overflow-visible overflow-x-clip`}
       >
         <motion.div
-          className="z-0 absolute top-0 left-0 w-full h-full bg-cover bg-home-background"
-          style={{ backgroundPosition: "center 35%", scale, opacity }}
+          className="z-0 absolute top-0 left-0 w-full h-[110vh] bg-cover bg-home-background"
+          style={{ backgroundPosition: "center 20%", scale, opacity }}
         />
-        <div
-          className="max-w-screen-lg mx-auto 
-      flex flex-col items-start justify-items-center 
-      h-full px-4 md:flex-row"
-        >
-          <div className="z-10 flex flex-col justify-start md:justify-center  h-full">
-            <motion.h2
+        <div className="max-w-screen-lg mx-auto flex flex-col items-start justify-items-center h-screen px-4 md:flex-row ">
+          <div className="z-10 w-full md:min-w-[65%] flex flex-col justify-start md:justify-center">
+            {/* home Header */}
+            <motion.div
               initial={{
                 x: -80,
                 opacity: 0,
@@ -47,11 +50,23 @@ const Home = () => {
                 x: 0,
                 opacity: [0, 0.1, 0.3, 0.5, 1],
               }}
-              className="z-3 text-4xl lg:text-7xl font-bold text-white"
+              className="z-3 text-[2.5rem] md:text-5xl lg:text-7xl font-bold text-white h-[6.5rem] lg:min-h-[9rem]"
             >
-              Former Structural Engineer | Future Software Engineer
-            </motion.h2>
-            {/* <h3 className="text-base sm:text-2xl font-bold text-white"></h3> */}
+              <Typewriter
+                words={[
+                  "Future Software\nEngineer",
+                  "Former Structural\nEngineer",
+                ]}
+                loop={false}
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={40}
+                delaySpeed={2000}
+              />
+            </motion.div>
+
+            {/* home description */}
             <div className="relative z-0 my-3">
               <div className="rounded-2xl absolute inset-0 max-w-md bg-black opacity-60 z-0" />
               <motion.p
@@ -66,12 +81,13 @@ const Home = () => {
                 className="text-gray-200 max-w-md m-1 relative z-1"
               >
                 Welcome to my corner of the web! 🚀 I'm passionate about
-                crafting digital solutions and currently pursuing my masters
+                crafting digital solutions and currently pursuing my Masters
                 degree in Information Technology. Explore my journey, projects,
-                and skills below.
+                and skills below!
               </motion.p>
             </div>
 
+            {/* home to portfolio button */}
             <div>
               <motion.button
                 initial={{
@@ -105,29 +121,32 @@ const Home = () => {
             </div>
           </div>
 
-          {isDesktop && (
-            <div className="z-10">
-              <motion.img
-                src={profileImg}
-                alt="My profile img"
-                initial={{
-                  y: 30,
-                  opacity: 0,
-                }}
-                animate={{
-                  y: 0,
-                  opacity: [0, 0.1, 0.2, 0.5, 1],
-                }}
-                transition={{
-                  delay: loadingDuration + 0.5,
-                  duration: 1.5,
-                  ease: "easeOut",
-                  times: [0, 0.25, 0.5, 0.75, 1],
-                }}
-                className="rounded-2xl mx-auto w-2/3 md:w-full py-16"
-              />
-            </div>
-          )}
+          {/* home image */}
+
+          <div
+            className="relative w-full py-40 rounded-full
+            md:py-0 md:min-w-[40%] md:left-[2rem]"
+          >
+            <motion.img
+              src={profileImg}
+              alt="My profile img"
+              initial={{
+                y: 30,
+                opacity: 0,
+              }}
+              animate={{
+                y: 0,
+                opacity: [0, 0.1, 0.2, 0.5, 1],
+              }}
+              transition={{
+                delay: loadingDuration + 0.5,
+                duration: 1.5,
+                ease: "easeOut",
+                times: [0, 0.25, 0.5, 0.75, 1],
+              }}
+              className="z-20 rounded-2xl m-0 w-[150%]"
+            />
+          </div>
         </div>
       </div>
     </MotionConfig>

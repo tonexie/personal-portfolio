@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { PiHandTapFill } from "react-icons/pi";
 
 const CardFlip = ({ title, front, back }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -30,8 +31,9 @@ const CardFlip = ({ title, front, back }) => {
           text-white rounded-lg"
           >
             {front}
-            <h1 className="flex-grow flex items-center justify-center text-sm md:text-lg font-bold /">
+            <h1 className="flex-grow flex items-center justify-center text-sm md:text-lg font-bold w-full gap-4 /">
               {title}
+              <PiHandTapFill size={30}/>
             </h1>
           </div>
 

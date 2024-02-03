@@ -9,24 +9,23 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title:"Full Stack Blog Website",
+      title: "Full Stack Blog Website",
       src: g2BlogImg,
       demo: "https://full-stack-blog-f6yb.onrender.com/",
       code: "https://github.com/tonexie/fullstack-blog",
     },
     {
       id: 2,
-      title:"Eigen Cash Website (InternShip)",
+      title: "Eigen Cash Website (InternShip)",
       src: eigenCashImg,
       demo: "https://www.eigen.cash/",
     },
     {
       id: 3,
-      title:"Fourier Labs Landing Page (InternShip)",
+      title: "Fourier Labs Landing Page (InternShip)",
       src: fourierLabsImg,
       demo: "https://fourierlabs.io/",
     },
-  
   ];
 
   return (
@@ -43,15 +42,14 @@ const Portfolio = () => {
           {projects.map(({ id, title, src, demo, code }) => (
             <CardFlip
               className="w-full h-full"
+              key={id}
               title={title}
               front={
-                <div key={id} className="flex flex-col">
-                  <img
-                    src={src}
-                    alt={`${src} img`}
-                    className="relative block rounded-md p-[1px]"
-                  />
-                </div>
+                <img
+                  src={src}
+                  alt={`${src} img`}
+                  className="relative block rounded-md p-[1px]"
+                />
               }
               back={
                 <div className="flex items-center justify-center">

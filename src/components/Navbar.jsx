@@ -5,7 +5,7 @@ import { useMediaQuery } from "react-responsive";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import MenuAnimated from "./animations/MenuAnimated";
+import MenuAnimated from "./Animations/MenuAnimated";
 
 export const Navbar = () => {
   const [navMenu, setNav] = useState(false);
@@ -13,7 +13,7 @@ export const Navbar = () => {
 
   const siteLinks = [
     { id: 1, link: "home", offset: 0 },
-    { id: 2, link: "about", offset: 150 },
+    { id: 2, link: "about", offset: 260 },
     { id: 3, link: "portfolio", offset: 80 },
     { id: 4, link: "skills", offset: 80 },
     { id: 5, link: "contact", offset: 80 },

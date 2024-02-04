@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useGlobalContext } from "../GlobalContext";
 import Navbar from "../components/Navbar";
 import Home from "../components/Home";
-import About from "../components/About";
+import About from "../components/About/About";
 import Portfolio from "../components/Portfolio";
 import Experience from "../components/Skills";
 import Contact from "../components/Contact";

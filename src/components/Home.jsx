@@ -1,16 +1,16 @@
 import React from "react";
 import { useGlobalContext } from "../GlobalContext";
-import profileImg from "../assets/portfolio/civil-software1.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import { motion, MotionConfig, useScroll, useTransform } from "framer-motion";
-// import { useMediaQuery } from "react-responsive";
+import { useMediaQuery } from "react-responsive";
 import { Typewriter } from "react-simple-typewriter";
+import HomeImage from "./Animations/HomeImage";
 
 const Home = () => {
   const { gV } = useGlobalContext();
   const loadingDuration = gV.loadingDuration / 1000;
-  // const isDesktop = useMediaQuery({ minWidth: 768 });
+  const isDesktop = useMediaQuery({ minWidth: 768 });
 
   // scroll animation for home image
   const { scrollY } = useScroll();
@@ -50,7 +50,7 @@ const Home = () => {
                 x: 0,
                 opacity: [0, 0.1, 0.3, 0.5, 1],
               }}
-              className="z-3 text-[2.5rem] md:text-5xl lg:text-7xl font-bold text-white h-[6.5rem] lg:min-h-[9rem]"
+              className="z-3 text-[2.3rem] sm:text-[3rem] md:text-5xl lg:text-7xl font-bold text-white h-[6.5rem] lg:min-h-[9rem]"
             >
               <Typewriter
                 words={[
@@ -121,32 +121,7 @@ const Home = () => {
             </div>
           </div>
 
-          {/* home image */}
-
-          <div
-            className="relative w-full py-40 rounded-full
-            md:py-0 md:min-w-[40%] md:left-[2rem]"
-          >
-            <motion.img
-              src={profileImg}
-              alt="My profile img"
-              initial={{
-                y: 30,
-                opacity: 0,
-              }}
-              animate={{
-                y: 0,
-                opacity: [0, 0.1, 0.2, 0.5, 1],
-              }}
-              transition={{
-                delay: loadingDuration + 0.5,
-                duration: 1.5,
-                ease: "easeOut",
-                times: [0, 0.25, 0.5, 0.75, 1],
-              }}
-              className="z-20 rounded-2xl m-0 w-[150%]"
-            />
-          </div>
+          {isDesktop && <HomeImage />}
         </div>
       </div>
     </MotionConfig>

@@ -3,7 +3,7 @@ import { bgGrayToBlack } from "../tailwind-utils";
 import eigenCashImg from "../assets/portfolio/eigen-cash.png";
 import fourierLabsImg from "../assets/portfolio/fourier-labs.png";
 import g2BlogImg from "../assets/portfolio/g2-blog.png";
-import CardFlip from "./animations/CardFlip";
+import CardFlip from "./Animations/CardFlip";
 
 const Portfolio = () => {
   const projects = [

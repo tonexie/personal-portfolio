@@ -3,6 +3,7 @@ import { bgGrayToBlack } from "../tailwind-utils";
 import eigenCashImg from "../assets/portfolio/eigen-cash.png";
 import fourierLabsImg from "../assets/portfolio/fourier-labs.png";
 import g2BlogImg from "../assets/portfolio/g2-blog.png";
+import pokemonImg from "../assets/portfolio/pokemon-viewer.png";
 import CardFlip from "./Animations/CardFlip";
 
 const Portfolio = () => {
@@ -16,15 +17,21 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: "Eigen Cash Website (InternShip)",
+      title: "Eigen Cash Website",
       src: eigenCashImg,
       demo: "https://www.eigen.cash/",
     },
     {
       id: 3,
-      title: "Fourier Labs Landing Page (InternShip)",
+      title: "Fourier Labs Landing Page",
       src: fourierLabsImg,
       demo: "https://fourierlabs.io/",
+    },
+    {
+      id: 4,
+      title: "Pokemon Viewer Website",
+      src: pokemonImg,
+      demo: "https://pokemon-viewer-1g8o.onrender.com/#",
     },
   ];
 

@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 import { motion, MotionConfig, useScroll, useTransform } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 import { Typewriter } from "react-simple-typewriter";
-import HomeImage from "./Animations/HomeImage";
+import HomeImage from "./HomeImage";
 import ShootingStar from "./Animations/ShootingStar/ShootingStar";
 
 const Home = () => {

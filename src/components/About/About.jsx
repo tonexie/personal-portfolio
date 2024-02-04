@@ -1,7 +1,7 @@
 import React from "react";
 import { bgBlackToGray } from "../../tailwind-utils";
 import { useMediaQuery } from "react-responsive";
-import HomeImage from "../Animations/HomeImage";
+import HomeImage from "../HomeImage";
 import Timeline from "./Timeline";
 
 const About = () => {

@@ -3,7 +3,7 @@ import { motion, MotionConfig } from "framer-motion";
 
 const MenuAnimated = (nav) => {
   let active = nav.active;
-  
+
   return (
     <MotionConfig transition={{ duration: 0.5, ease: "easeInOut" }}>
       <motion.button

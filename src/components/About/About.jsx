@@ -2,7 +2,7 @@ import React from "react";
 import { bgBlackToGray } from "../../tailwind-utils";
 import { useMediaQuery } from "react-responsive";
 import HomeImage from "../Home/HomeImage";
-// import Timeline from "./Timeline";
+import Timeline from "./Timeline";
 
 const About = () => {
   const isDesktop = useMediaQuery({ minWidth: 768 });
@@ -35,7 +35,7 @@ const About = () => {
         </p>
 
         <h2 className="text-[1.8rem] text-center pb-4 pt-24">Timeline</h2>
-        {/* <Timeline /> */}
+        <Timeline />
       </div>
       
     </div>

@@ -17,7 +17,7 @@ const experiences = [
     id: 1,
     title: "Postgraduate Web-Development Tutor",
     sub: "University of Auckland",
-    desc: "Software Engineering and stuff",
+    desc: "As a Postgraduate Web-Development Tutor at the University of Auckland, I guide students in building dynamic web applications with a focus on HTTP, HTML, URIs, client-side technologies, servlets, and databases for COMPSCI 719.",
     date: "2024 Feb - Present",
     backCol: blueGradient,
     icon: <MdOutlineWorkOutline />,
@@ -29,7 +29,15 @@ const experiences = [
     id: 2,
     title: "Masters of Information Technology",
     sub: "University of Auckland",
-    desc: "Software Engineering and stuff",
+    desc: (
+      <ul className="list-disc">
+        Key Courses include:
+        <li className="ml-6 ">Advanced Information Security</li>
+        <li className="ml-6 ">Creating Maintainable Software</li>
+        <li className="ml-6 ">Advanced Topics in Database Systems</li>
+        <li className="ml-6 ">Software Tools and Techniques</li>
+      </ul>
+    ),
     date: "2024 Feb - Present",
     backCol: greenGradient,
     icon: <IoSchool />,
@@ -41,7 +49,7 @@ const experiences = [
     id: 3,
     title: "Frontend Engineer Internship",
     sub: "Fourier Labs | Remote",
-    desc: "Software Engineering and stuff",
+    desc: "Played a key role in enhancing React and Vue websites, showcasing rapid skill acquisition in technologies that were previously unfamilar to me. Additionally, I effectively communicated with the team, underlining my commitment to ongoing learning and technical proficiency.",
     date: "2023 Dec - 2024 Jan",
     backCol: blueGradient,
     icon: <MdOutlineWorkOutline />,
@@ -52,8 +60,20 @@ const experiences = [
   {
     id: 4,
     title: "Postgraduate Cerfticate of Information Technology",
-    sub: "University of Auckland",
-    desc: "Software Engineering and stuff",
+    sub: "University of Auckland | Grade: A+ (96%)",
+    desc: (
+      <ul className="list-disc">
+        Core Courses include:
+        <li className="ml-6 ">
+          Programming for Industry (Java, Swing, OOP, Industry Design Patterns,
+          Unit Tests)
+        </li>
+        <li className="ml-6 ">
+          Programming with Web Technologies (JavaScript, Node.js, Express.js,
+          Handlebars, HTML, CSS)
+        </li>
+      </ul>
+    ),
     date: "2023 Jun - 2023 Nov",
     backCol: greenGradient,
     icon: <IoSchool />,
@@ -65,7 +85,7 @@ const experiences = [
     id: 5,
     title: "Structural Engineer",
     sub: "Harris Foster Consulting Group | Auckland",
-    desc: "Software Engineering and stuff",
+    desc: "Successfully managed a diverse portfolio of over 200 projects, ranging from individual homes to large-scale developments, demonstrating exceptional time management and efficiency, while consistently meeting deadlines and delivering within budget.",
     date: "2022 Mar - 2023 Apr",
     backCol: blueGradient,
     icon: <MdOutlineWorkOutline />,
@@ -77,7 +97,7 @@ const experiences = [
     id: 6,
     title: "Graduate Structural Engineer",
     sub: "TMC Consulting Engineers | Auckland",
-    desc: "Software Engineering and stuff",
+    desc: "Completed over 60 projects, including detailed structural calculations, accurate CAD drawings, and preparation of BC documents.",
     date: "2021 Jun - 2022 Feb",
     backCol: blueGradient,
     icon: <MdOutlineWorkOutline />,
@@ -89,7 +109,7 @@ const experiences = [
     id: 7,
     title: "Intern -> Graduate Structural Engineer",
     sub: "MEC Consultant Engineering  | Auckland",
-    desc: "Software Engineering and stuff",
+    desc: "Conducted weekly site inspections, completed CAD projects for beam and floor plans, and collaborated on various civil projects.",
     date: "2019 Dec - 2021 Feb",
     backCol: blueGradient,
     icon: <MdOutlineWorkOutline />,
@@ -101,8 +121,20 @@ const experiences = [
     id: 8,
     title: "Bachelor of Engineering Honours",
     sub: "The University of Queensland | Brisbane",
-    desc: "Software Engineering and stuff",
+    desc: "Structural Engineering | Civil Engineering | Geotechnical Engineering | Transportation Design | Hydrology | Material Science",
     date: "2017 Feb - 2021 Jan",
+    backCol: greenGradient,
+    icon: <IoSchool />,
+    iconCol: greenGradient,
+    arrowCol: "#1b4332",
+    textCol: "#fff",
+  },
+  {
+    id: 9,
+    title: "International Baccalaureate",
+    sub: "Auckland International College",
+    desc: "Physics | Chemistry | Math | English | Chinese | Economics",
+    date: "2014 Jun - 2016 July",
     backCol: greenGradient,
     icon: <IoSchool />,
     iconCol: greenGradient,

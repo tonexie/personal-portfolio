@@ -1,12 +1,12 @@
 import React from "react";
-import { useGlobalContext } from "../GlobalContext";
+import { useGlobalContext } from "../../GlobalContext";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import { motion, MotionConfig, useScroll, useTransform } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 import { Typewriter } from "react-simple-typewriter";
 import HomeImage from "./HomeImage";
-import ShootingStar from "./Animations/ShootingStar/ShootingStar";
+import ShootingStar from "../Animations/ShootingStar/ShootingStar";
 
 const Home = () => {
   const { gV } = useGlobalContext();

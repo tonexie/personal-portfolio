@@ -6,6 +6,7 @@ import { motion, MotionConfig, useScroll, useTransform } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 import { Typewriter } from "react-simple-typewriter";
 import HomeImage from "./Animations/HomeImage";
+import ShootingStar from "./Animations/ShootingStar/ShootingStar";
 
 const Home = () => {
   const { gV } = useGlobalContext();
@@ -38,6 +39,9 @@ const Home = () => {
           className="z-0 absolute top-0 left-0 w-full h-[110vh] bg-cover bg-home-background"
           style={{ backgroundPosition: "center 20%", scale, opacity }}
         />
+
+        <ShootingStar />
+
         <div className="max-w-screen-lg mx-auto flex flex-col items-start justify-items-center h-screen px-4 md:flex-row ">
           <div className="z-10 w-full md:min-w-[65%] flex flex-col justify-start md:justify-center">
             {/* home Header */}

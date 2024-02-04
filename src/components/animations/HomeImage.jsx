@@ -1,13 +1,13 @@
 import React from "react";
 import { useGlobalContext } from "../../GlobalContext";
 import { motion } from "framer-motion";
-// import { useMediaQuery } from "react-responsive";
+
+
 import profileImg from "../../assets/portfolio/civil-software1.png";
 
 const HomeImage = () => {
   const { gV } = useGlobalContext();
   const loadingDuration = gV.loadingDuration / 1000;
-  // const isDesktop = useMediaQuery({ minWidth: 768 });
 
   return (
     <div

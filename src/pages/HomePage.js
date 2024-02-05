@@ -3,7 +3,7 @@ import { useGlobalContext } from "../GlobalContext";
 import Navbar from "../components/Navbar";
 import Home from "../components/Home/Home";
 import About from "../components/About/About";
-import Portfolio from "../components/Portfolio";
+import Portfolio from "../components/Portfolio/Portfolio";
 import Experience from "../components/Skills";
 import Contact from "../components/Contact";
 import SocialLinks from "../components/SocialLinks";

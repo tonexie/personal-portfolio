@@ -11,6 +11,8 @@ module.exports = {
       signature1: ["Great Vibes"],
       signature2: ["Autography"],
       signature3: ["Arthemis"],
+      robotoSlab: ["Roboto Slab"],
+      raleway: ["Raleway"],
     }
   },
   plugins: [],

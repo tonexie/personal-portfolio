@@ -54,7 +54,8 @@ const Home = () => {
                 x: 0,
                 opacity: [0, 0.1, 0.3, 0.5, 1],
               }}
-              className="z-3 text-[2.3rem] sm:text-[3rem] md:text-5xl lg:text-7xl font-bold text-white h-[6.5rem] lg:min-h-[9rem]"
+              className="z-3 text-[2.3rem] sm:text-[3rem] md:text-5xl lg:text-7xl 
+              font-raleway font-bold text-white h-[6.5rem] lg:min-h-[9rem]"
             >
               <Typewriter
                 words={[

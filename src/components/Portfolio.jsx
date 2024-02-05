@@ -12,6 +12,7 @@ const Portfolio = () => {
       id: 1,
       title: "Full Stack Blog Website",
       src: g2BlogImg,
+      desc: "hello world",
       demo: "https://full-stack-blog-f6yb.onrender.com/",
       code: "https://github.com/tonexie/fullstack-blog",
     },
@@ -19,19 +20,24 @@ const Portfolio = () => {
       id: 2,
       title: "Eigen Cash Website",
       src: eigenCashImg,
+      desc: "hello world",
       demo: "https://www.eigen.cash/",
+      code: false,
     },
     {
       id: 3,
       title: "Fourier Labs Landing Page",
       src: fourierLabsImg,
       demo: "https://fourierlabs.io/",
+      code: false,
     },
     {
       id: 4,
       title: "Pokemon Viewer Website",
       src: pokemonImg,
+      desc: "hello world",
       demo: "https://pokemon-viewer-1g8o.onrender.com/#",
+      code: false,
     },
   ];
 
@@ -59,7 +65,7 @@ const Portfolio = () => {
                 />
               }
               back={
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-evenly ">
                   <a href={demo} target="_blank" rel="noreferrer">
                     <button className="w-1/2 px-6 py-3 m-4 hover:scale-105 duration-200">
                       Demo

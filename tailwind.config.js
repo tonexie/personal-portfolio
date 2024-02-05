@@ -8,7 +8,9 @@ module.exports = {
       },
     },
     fontFamily: {
-      signature: ["Great Vibes"],
+      signature1: ["Great Vibes"],
+      signature2: ["Autography"],
+      signature3: ["Arthemis"],
     }
   },
   plugins: [],

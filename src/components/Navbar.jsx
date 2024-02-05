@@ -62,7 +62,7 @@ export const Navbar = () => {
   return (
     <div className="flex z-20 justify-between items-center w-full h-20 px-4 text-white fixed bg-black opacity-90">
       <div>
-        <h1 className="text-5xl font-signature ml-2">Tone</h1>
+        <h1 className="text-[3.5rem] font-signature3 ml-4">Tone</h1>
       </div>
 
       <ul className="hidden md:flex">

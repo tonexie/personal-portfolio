@@ -18,7 +18,7 @@ const About = () => {
 
         {!isDesktop && <HomeImage />}
 
-        <p className="text-xl">
+        <p className="text-base md:text-xl">
           I am a highly motivated aspiring software engineer with a background
           in structural engineering, which has equipped me with problem-solving
           skills and an acute attention to detail. I am passionate about the
@@ -26,7 +26,7 @@ const About = () => {
           set to contribute to new exciting projects.
         </p>
         <br />
-        <p className="text-xl mt-5">
+        <p className="text-base md:text-xl mt-5">
           I am eager to join a dynamic environment that not only promotes
           continuous learning and development but also embodies a strong
           commitment to professional growth with a positive and inclusive

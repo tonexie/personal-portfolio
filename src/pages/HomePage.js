@@ -8,6 +8,7 @@ import Experience from "../components/Skills";
 import Contact from "../components/Contact";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
 import LoadingScreen from "../components/LoadingScreen";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
   const [loading, setLoading] = useState(true);
@@ -31,6 +32,7 @@ const HomePage = () => {
       <Experience />
       <Contact />
       <SocialLinks />
+      <Footer />
     </div>
   );
 };

@@ -73,7 +73,7 @@ const projects = [
     skills: ["ExpressJs", "NodeJs", "AJAX", "JavaScript", "HTML", "CSS"],
     demo: "https://pokemon-viewer-1g8o.onrender.com/#",
     code: false,
-    mobileBackHeight: mobileBackHeight,
+    mobileBackHeight: "550px",
     PCBackHeight: PCBackHeight,
     warning: true,
   },

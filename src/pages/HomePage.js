@@ -6,7 +6,7 @@ import About from "../components/About/About";
 import Portfolio from "../components/Portfolio/Portfolio";
 import Experience from "../components/Skills";
 import Contact from "../components/Contact";
-import SocialLinks from "../components/SocialLinks";
+import SocialLinks from "../components/SocialLinks/SocialLinks";
 import LoadingScreen from "../components/LoadingScreen";
 
 const HomePage = () => {

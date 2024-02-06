@@ -1,6 +1,6 @@
 import React from "react";
 import { bgGrayToBlack } from "../../tailwind-utils";
-import CardFlip from "./CardFlip";
+import CardFlip from "./CardFlip/CardFlip";
 import { useMediaQuery } from "react-responsive";
 
 import projects from "./projects";
@@ -74,10 +74,10 @@ const Portfolio = () => {
                             href={demo}
                             target="_blank"
                             rel="noreferrer"
-                            className="m-1"
+                            className="exclude-clicks m-1"
                           >
-                            <button class="w-[6rem] md:w-[8rem] h-full px-2 py-[0.8rem] md:py-[1rem] bg-[#DADFF7] cursor-pointer rounded-3xl border-2 border-[#232C33] shadow-[inset_0px_-2px_0px_1px_#232C33] group hover:bg-[#232C33] transition duration-300 ease-in-out">
-                              <span class="font-medium text-[#232C33] group-hover:text-[#DADFF7]">
+                            <button className="exclude-clicks w-[6rem] md:w-[8rem] h-full px-2 py-[0.8rem] md:py-[1rem] bg-[#DADFF7] cursor-pointer rounded-3xl border-2 border-[#232C33] shadow-[inset_0px_-2px_0px_1px_#232C33] group hover:bg-[#232C33] transition duration-300 ease-in-out">
+                              <span className="exclude-clicks font-medium text-[#232C33] group-hover:text-[#DADFF7]">
                                 Demo
                               </span>
                             </button>
@@ -88,10 +88,10 @@ const Portfolio = () => {
                             href={code}
                             target="_blank"
                             rel="noreferrer"
-                            className="m-1"
+                            className="exclude-clicks m-1"
                           >
-                            <button class="w-[6rem] md:w-[8rem] h-full px-2 py-[0.8rem] md:py-[1rem] bg-[#DADFF7] cursor-pointer rounded-3xl border-2 border-[#232C33] shadow-[inset_0px_-2px_0px_1px_#232C33] group hover:bg-[#232C33] transition duration-300 ease-in-out">
-                              <span class="font-medium text-[#333] group-hover:text-[#DADFF7]">
+                            <button className="exclude-clicks w-[6rem] md:w-[8rem] h-full px-2 py-[0.8rem] md:py-[1rem] bg-[#DADFF7] cursor-pointer rounded-3xl border-2 border-[#232C33] shadow-[inset_0px_-2px_0px_1px_#232C33] group hover:bg-[#232C33] transition duration-300 ease-in-out">
+                              <span className="exclude-clicks font-medium text-[#333] group-hover:text-[#DADFF7]">
                                 Code
                               </span>
                             </button>

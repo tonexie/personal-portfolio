@@ -6,7 +6,7 @@ import { motion, MotionConfig, useScroll, useTransform } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 import { Typewriter } from "react-simple-typewriter";
 import HomeImage from "./HomeImage";
-import ShootingStar from "../Animations/ShootingStar/ShootingStar";
+import ShootingStar from "./ShootingStar/ShootingStar";
 
 const Home = () => {
   const { gV } = useGlobalContext();
@@ -55,7 +55,7 @@ const Home = () => {
                 opacity: [0, 0.1, 0.3, 0.5, 1],
               }}
               className="z-3 text-[2.3rem] sm:text-[3rem] md:text-5xl lg:text-7xl 
-              font-raleway font-bold text-white h-[6.5rem] lg:min-h-[9rem]"
+              font-roboto font-extrabold sm:font-raleway sm:font-bold text-white h-[6.5rem] lg:min-h-[9rem]"
             >
               <Typewriter
                 words={[

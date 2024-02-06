@@ -2,10 +2,10 @@ import React, { useState } from "react";
 // import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { useMediaQuery } from "react-responsive";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import MenuAnimated from "./Animations/MenuAnimated";
+import MenuAnimated from "./SocialLinks/MenuAnimated";
+import links from "./SocialLinks/links";
+
+const socialLinks = links;
 
 export const Navbar = () => {
   const [navMenu, setNav] = useState(false);
@@ -17,46 +17,6 @@ export const Navbar = () => {
     { id: 3, link: "portfolio", offset: 80 },
     { id: 4, link: "skills", offset: 80 },
     { id: 5, link: "contact", offset: 80 },
-  ];
-
-  const socialLinks = [
-    {
-      id: 1,
-      child: (
-        <>
-          <FaLinkedin size={45} />
-        </>
-      ),
-      href: "https://www.linkedin.com/in/tone-xie-87a5b3141/",
-    },
-    {
-      id: 2,
-      child: (
-        <>
-          <FaGithub size={45} />
-        </>
-      ),
-      href: "https://github.com/tonexie",
-    },
-    {
-      id: 3,
-      child: (
-        <>
-          <HiOutlineMail size={45} />
-        </>
-      ),
-      href: "mailto:tone.xie@gmail.com",
-    },
-    {
-      id: 4,
-      child: (
-        <>
-          <BsFillPersonLinesFill size={45} />
-        </>
-      ),
-      href: "/Resume_XIE_TONE.pdf",
-      download: true,
-    },
   ];
 
   return (
@@ -110,7 +70,7 @@ export const Navbar = () => {
           ))}
 
           <div className="flex gap-8 mt-16">
-            {socialLinks.map(({ id, child, href, download }) => (
+            {socialLinks.map(({ id, child45, href, download }) => (
               <div key={id} className="flex gap-8">
                 <a
                   href={href}
@@ -119,7 +79,7 @@ export const Navbar = () => {
                   target="_blank" // opens new tab
                   rel="noreferrer"
                 >
-                  {child}
+                  {child45}
                 </a>
               </div>
             ))}

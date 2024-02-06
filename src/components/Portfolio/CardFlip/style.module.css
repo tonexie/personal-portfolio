@@ -1,0 +1,21 @@
+.flip_card {
+  display: flex;
+  perspective: 1000px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.flip_card_inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip_card_front,
+.flip_card_back {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip_card_back {
+  transform: rotateY(180deg);
+}

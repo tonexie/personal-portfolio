@@ -2,7 +2,6 @@ import React from "react";
 import { useGlobalContext } from "../../GlobalContext";
 import { motion } from "framer-motion";
 
-
 import profileImg from "../../assets/portfolio/civil-software1.png";
 
 const HomeImage = () => {

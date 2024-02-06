@@ -37,7 +37,7 @@ const Timeline = () => {
             <h4 className="vertical-timeline-element-subtitle text-[0.8rem]">
               {sub}
             </h4>
-            <p>{desc}</p>
+            <div className="text-base">{desc}</div>
           </VerticalTimelineElement>
         )
       )}

@@ -9,7 +9,6 @@ const PCBackHeight = "480px";
 
 const projects = [
   {
-    id: 1,
     title: "Full Stack Blog Website",
     src: g2BlogImg,
     desc: "User-friendly, secure, and interactive. Features include user registration and authentication, article comments, likes, and subscriptions. WYSIWYG editor for content control. User autonomy over personal information. Analytics for insights into user-generated content.",
@@ -34,7 +33,6 @@ const projects = [
     warning: true,
   },
   {
-    id: 2,
     title: "Fourier Labs Landing Page",
     src: fourierLabsImg,
     desc: "In the Vue development role for the Fourier Labs landing page, successfully integrated new components based on Figma design specifications, encompassing the creation of numerous page views and visual elements. Ensured the website's responsive design, improved footer link functionality, and addressed existing bugs for enhanced performance.",
@@ -54,7 +52,6 @@ const projects = [
     warning: false,
   },
   {
-    id: 3,
     title: "Eigen Cash Website",
     src: eigenCashImg,
     desc: "Led the optimization of Fourier Lab's Eigen Cash website's React-based architecture, ensuring full responsiveness and adapting the design for diverse screen sizes. Successfully integrated an extra page to inform users of the privacy policy.",
@@ -66,7 +63,6 @@ const projects = [
     warning: false,
   },
   {
-    id: 4,
     title: "Pokemon Viewer Website",
     src: pokemonImg,
     desc: "Developed a dynamic Pokémon viewer website, leveraging HTML, CSS, and JavaScript to bring interactivity to the platform. Implemented multiple theme selectors to enhance the user experience and employed AJAX requests and API calls to third-party applications, providing comprehensive and real-time Pokémon information. Incoporated engaging animations to increase site visual appeal",

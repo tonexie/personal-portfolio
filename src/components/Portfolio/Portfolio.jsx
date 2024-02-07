@@ -2,8 +2,12 @@ import React from "react";
 import { bgGrayToBlack } from "../../tailwind-utils";
 import CardFlip from "./CardFlip/CardFlip";
 import { useMediaQuery } from "react-responsive";
-
 import projects from "./projects";
+
+const projectsWithIDs = projects.map((projects, index) => ({
+  ...projects,
+  id: index + 1,
+}));
 
 const Portfolio = () => {
   const isDesktop = useMediaQuery({ minWidth: 768 });
@@ -15,11 +19,13 @@ const Portfolio = () => {
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio
           </p>
-          <p className="text-base md:text-xl py-6">Check out some of my work right here:</p>
+          <p className="text-base md:text-xl py-6">
+            Check out some of my work right here:
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-[0.2rem_2rem] px-0 sm:p-2">
-          {projects.map(
+          {projectsWithIDs.map(
             ({
               id,
               title,

@@ -3,7 +3,7 @@ import links from "./SocialLinks/links";
 
 const socialLinks = links;
 
-export const Navbar = () => {
+export const Footer = () => {
   return (
     <div className="flex flex-col py-12 pt-0 z-20 justify-center items-center w-full px-4 text-white bg-black">
       <div
@@ -82,4 +82,4 @@ export const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Footer;

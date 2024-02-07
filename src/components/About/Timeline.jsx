@@ -1,17 +1,21 @@
 import React from "react";
-import experiences from "./experiences"
-
 import { FaRegStar } from "react-icons/fa";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import experiences from "./experiences"
+
+const experiencesWithIDs = experiences.map((experiences, index) => ({
+  ...experiences,
+  id: index + 1,
+}));
 
 const Timeline = () => {
   return (
     <VerticalTimeline>
-      {experiences.map(
+      {experiencesWithIDs.map(
         ({
           id,
           title,

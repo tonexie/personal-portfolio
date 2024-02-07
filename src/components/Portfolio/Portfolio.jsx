@@ -60,7 +60,7 @@ const Portfolio = () => {
                         <div
                           key={index}
                           className="bg-gradient-to-l from-cyan-600 to-purple-600
-                           p-[0.2rem_0.5rem] rounded-full text-[0.8rem] hover:scale-105"
+                           p-[0.2rem_0.5rem] rounded-full text-[0.8rem] hover:scale-110 duration-200"
                         >
                           {skill}
                         </div>

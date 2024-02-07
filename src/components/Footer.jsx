@@ -37,7 +37,7 @@ export const Navbar = () => {
         <div
           className="flex flex-col justify-center items-center
           py-8 md:py-0 md:items-start
-          text-[0.6rem] md:text-[0.7rem]"
+          text-[0.7rem]"
         >
           <h3 className="font-bold text-[1rem] pb-2">Credit</h3>
           <div>
@@ -65,7 +65,7 @@ export const Navbar = () => {
       {/* bottom message */}
       <div
         className="flex flex-col justify-center items-center
-        text-[0.8rem]"
+        text-[0.9rem]"
       >
         <div>
           <a

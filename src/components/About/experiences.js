@@ -40,7 +40,7 @@ const experiences = [
     title: "Frontend Engineer Internship",
     sub: "Fourier Labs | Remote",
     desc: "Played a key role in enhancing React and Vue websites, showcasing rapid skill acquisition in technologies that were previously unfamilar to me. Additionally, I effectively communicated with the team, underlining my commitment to ongoing learning and technical proficiency.",
-    date: "2023 Dec - 2024 Jan",
+    date: "2023 Nov - 2024 Jan",
     backCol: blueGradient,
     icon: <MdOutlineWorkOutline />,
     iconCol: blueGradient,

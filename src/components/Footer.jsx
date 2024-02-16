@@ -76,7 +76,7 @@ export const Footer = () => {
             Created with ❤️ using React, click to view code.
           </a>
         </div>
-        <div>© 2024 Tone Xie Porfolio Website. All rights reserved. </div>
+        <div className="text-center mt-2">© 2024 Tone Xie Porfolio Website. All rights reserved. </div>
       </div>
     </div>
   );

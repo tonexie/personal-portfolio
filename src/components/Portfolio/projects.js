@@ -2,6 +2,7 @@ import eigenCashImg from "../../assets/portfolio/eigen-cash.png";
 import fourierLabsImg from "../../assets/portfolio/fourier-labs.png";
 import g2BlogImg from "../../assets/portfolio/g2-blog.png";
 import pokemonImg from "../../assets/portfolio/pokemon-viewer.png";
+import portfolioImg from "../../assets/portfolio/personal-website.png";
 
 // default heights
 const mobileBackHeight = "500px";
@@ -16,13 +17,13 @@ const projects = [
       "ExpressJs",
       "NodeJs",
       "VanillaJs",
+      "UUID",
       "AJAX",
       "API",
       "Handlebars",
       "HTML",
       "CSS",
       "SQL",
-      "DAOs",
       "ER Diagram",
       "GitHub",
     ],
@@ -31,6 +32,23 @@ const projects = [
     mobileBackHeight: mobileBackHeight,
     PCBackHeight: PCBackHeight,
     warning: true,
+  },
+  {
+    title: "Personal Portfolio Website",
+    src: portfolioImg,
+    desc: "Explore my dynamic personal portfolio website, built with React and Tailwind CSS, enhanced with fluid animations powered by Framer Motion! With a focus on modular input data, ensuring effortless updates to showcase my evolving skills and projects.",
+    skills: [
+      "React",
+      "Tailwind",
+      "Framer Motion",
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+    code: "https://github.com/tonexie/personal-portfolio",
+    mobileBackHeight: mobileBackHeight,
+    PCBackHeight: PCBackHeight,
+    warning: false,
   },
   {
     title: "Fourier Labs Landing Page",

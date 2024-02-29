@@ -1,4 +1,4 @@
-import eigenCashImg from "../../assets/portfolio/eigen-cash.png";
+import spaceshipImg from "../../assets/portfolio/spaceship-game.png";
 import fourierLabsImg from "../../assets/portfolio/fourier-labs.png";
 import g2BlogImg from "../../assets/portfolio/g2-blog.png";
 import pokemonImg from "../../assets/portfolio/pokemon-viewer.png";
@@ -70,17 +70,6 @@ const projects = [
     warning: false,
   },
   {
-    title: "Eigen Cash Website",
-    src: eigenCashImg,
-    desc: "Led the optimization of Fourier Lab's Eigen Cash website's React-based architecture, ensuring full responsiveness and adapting the design for diverse screen sizes. Successfully integrated an extra page to inform users of the privacy policy.",
-    skills: ["React", "JavaScript", "NodeJs", "GitHub", "HTML", "CSS"],
-    demo: "https://www.eigen.cash/",
-    code: false,
-    mobileBackHeight: mobileBackHeight,
-    PCBackHeight: PCBackHeight,
-    warning: false,
-  },
-  {
     title: "Pokemon Viewer Website",
     src: pokemonImg,
     desc: "Developed a dynamic Pokémon viewer website, leveraging HTML, CSS, and JavaScript to bring interactivity to the platform. Implemented multiple theme selectors to enhance the user experience and employed AJAX requests and API calls to third-party applications, providing comprehensive and real-time Pokémon information. Incoporated engaging animations to increase site visual appeal",
@@ -91,6 +80,30 @@ const projects = [
     PCBackHeight: PCBackHeight,
     warning: true,
   },
+  {
+    title: "Spaceship Game 2-Player",
+    src: spaceshipImg,
+    desc: "This project implements a two-player spaceship game using the Pygame library. Players control yellow and red spaceships, aiming to defeat each other by reducing their opponent's health points to zero. The game features mechanics such as spaceship movement, bullet firing, booster pickups with various effects, and winner determination.",
+    skills: ["Python", "PyGame", "OOP"],
+    demo: false,
+    code: "https://github.com/tonexie/spaceship-game",
+    mobileBackHeight: mobileBackHeight,
+    PCBackHeight: PCBackHeight,
+    warning: false,
+  },
 ];
+
+// PROJECTS ARCHIVE
+// {
+//   title: "Eigen Cash Website",
+//   src: eigenCashImg,
+//   desc: "Led the optimization of Fourier Lab's Eigen Cash website's React-based architecture, ensuring full responsiveness and adapting the design for diverse screen sizes. Successfully integrated an extra page to inform users of the privacy policy.",
+//   skills: ["React", "JavaScript", "NodeJs", "GitHub", "HTML", "CSS"],
+//   demo: "https://www.eigen.cash/",
+//   code: false,
+//   mobileBackHeight: mobileBackHeight,
+//   PCBackHeight: PCBackHeight,
+//   warning: false,
+// },
 
 export default projects;

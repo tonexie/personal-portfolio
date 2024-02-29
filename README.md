@@ -1,5 +1,7 @@
 ## Check out my website here!
 https://tx-portfolio.netlify.app/
+<img width="955" alt="personal-website" src="https://github.com/tonexie/personal-portfolio/assets/131140622/fea52741-1ecf-446c-9c9c-fb57f6e8f9d8">
+
 
 ## Available Scripts
 

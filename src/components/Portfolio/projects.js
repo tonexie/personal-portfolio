@@ -12,7 +12,7 @@ const projects = [
   {
     title: "Full Stack Blog Website",
     src: g2BlogImg,
-    desc: "User-friendly, secure, and interactive. Features include user registration and authentication, article comments, likes, and subscriptions. WYSIWYG editor for content control. User autonomy over personal information. Analytics for insights into user-generated content.",
+    desc: "User-friendly, secure, and interactive. Features include user registration and authentication, article comments, likes, and subscriptions. WYSIWYG editor for content control. User autonomy over personal information. Analytics for insights into user-generated content. Primary reviewer for PRs and merge conflicts.",
     skills: [
       "ExpressJs",
       "NodeJs",
@@ -29,7 +29,7 @@ const projects = [
     ],
     demo: "https://full-stack-blog-f6yb.onrender.com/",
     code: "https://github.com/tonexie/fullstack-blog",
-    mobileBackHeight: mobileBackHeight,
+    mobileBackHeight: "550px",
     PCBackHeight: PCBackHeight,
     warning: true,
   },

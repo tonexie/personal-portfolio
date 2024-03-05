@@ -70,8 +70,8 @@ const Portfolio = () => {
                       {warning && (
                         <p className="text-[0.7rem] text-center">
                           *Please be aware that the live demo may take up to a
-                          minute to open, as it is hosted on a free service.
-                          Thank you for your patience.
+                          minute to start up, as it is hosted on a
+                          free service. Thank you for your patience.
                         </p>
                       )}
                       <div className="flex justify-evenly justify-self-end">

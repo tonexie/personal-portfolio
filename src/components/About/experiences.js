@@ -7,9 +7,9 @@ const greenGradient =
 
 const experiences = [
   {
-    title: "Postgraduate Web-Development Tutor",
+    title: "Graduate Teaching Assistant | Web Development",
     sub: "University of Auckland",
-    desc: "As a Postgraduate Web-Development Tutor at the University of Auckland, I guide students in building dynamic web applications with a focus on HTTP, HTML, URIs, client-side technologies, servlets, and databases for COMPSCI 719.",
+    desc: "Guided postgraduate students in mastering web development technologies as a COMPSCI 719 tutor, emphasizing foundational concepts, responsive design, frontend and backend frameworks, database management, and version control systems.",
     date: "2024 Feb - Present",
     backCol: blueGradient,
     icon: <MdOutlineWorkOutline />,
@@ -39,7 +39,7 @@ const experiences = [
   {
     title: "Frontend Engineer Internship",
     sub: "Fourier Labs | Remote",
-    desc: "Played a key role in enhancing React and Vue websites, showcasing rapid skill acquisition in technologies that were previously unfamilar to me. Additionally, I effectively communicated with the team, underlining my commitment to ongoing learning and technical proficiency.",
+    desc: "Led the optimization of a React website's responsiveness using Tailwind CSS, ensuring seamless user experience. Implemented new components and enhanced functionality for a Vue.js website based on Figma design specifications. Rapidly acquired proficiency in React, Vue.js, and Tailwind CSS, showcasing a strong commitment to learning and staying ahead of emerging technologies.",
     date: "2023 Nov - 2024 Jan",
     backCol: blueGradient,
     icon: <MdOutlineWorkOutline />,

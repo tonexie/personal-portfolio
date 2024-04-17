@@ -10,17 +10,21 @@ import sqlIcon from "../../assets/icons/sql.png";
 import pythonIcon from "../../assets/icons/python.svg";
 import tailwindIcon from "../../assets/icons/tailwind.svg";
 import { FaGithub } from "react-icons/fa";
+import mongoDBIcon from "../../assets/icons/mongoDB.png";
+import svelteIcon from "../../assets/icons/svelte.svg";
+import autocadIcon from "../../assets/icons/autocad.svg";
 
 const technologies = [
+
   {
-    src: javaIcon,
-    name: "Java",
-    style: { boxShadow: "2px 2px 4px #1565c0, -2px 0px 4px #f44336" },
+    src: mongoDBIcon,
+    name: "MongoDB",
+    style: { boxShadow: "2px 2px 4px #499d4a, -2px 2px 4px #499d4a" },
   },
   {
-    src: jsIcon,
-    name: "JavaScript",
-    style: { boxShadow: "2px 2px 4px #ffd600, -2px 2px 4px #ffd600" },
+    src: expressIcon,
+    name: "ExpressJs",
+    style: { boxShadow: "2px 2px 4px #66798f, -2px 2px 4px #66798f" },
   },
   {
     src: reactIcon,
@@ -28,9 +32,29 @@ const technologies = [
     style: { boxShadow: "2px 2px 4px #4e7ab5, -2px 2px 4px #4e7ab5" },
   },
   {
+    src: nodeIcon,
+    name: "NodeJs",
+    style: { boxShadow: "2px 2px 4px #21a366, -2px 2px 4px #21a366" },
+  },
+  {
+    src: javaIcon,
+    name: "Java",
+    style: { boxShadow: "2px 2px 4px #1565c0, -2px 0px 4px #f44336" },
+  },
+  {
+    src: svelteIcon,
+    name: "Svelte",
+    style: { boxShadow: "2px 2px 4px #ef4823, -2px 2px 4px #ffffff" },
+  },
+  {
     src: vueIcon,
     name: "VueJs",
     style: { boxShadow: "2px 2px 4px #81c784, -2px 0px 4px #455a64" },
+  },
+  {
+    src: jsIcon,
+    name: "JavaScript",
+    style: { boxShadow: "2px 2px 4px #ffd600, -2px 2px 4px #ffd600" },
   },
   {
     src: htmlIcon,
@@ -48,16 +72,6 @@ const technologies = [
     style: { boxShadow: "2px 2px 4px #00b4d3, -2px 2px 4px #00b4d3" },
   },
   {
-    src: nodeIcon,
-    name: "NodeJs",
-    style: { boxShadow: "2px 2px 4px #21a366, -2px 2px 4px #21a366" },
-  },
-  {
-    src: expressIcon,
-    name: "ExpressJs",
-    style: { boxShadow: "2px 2px 4px #66798f, -2px 2px 4px #66798f" },
-  },
-  {
     src: <FaGithub size={80} />,
     name: "GitHub",
     style: { boxShadow: "2px 2px 4px gray, -2px 2px 4px gray" },
@@ -72,6 +86,12 @@ const technologies = [
     name: "SQL",
     style: { boxShadow: "2px 2px 4px #3d4b89, -2px 2px 4px #5663af" },
   },
+  {
+    src: autocadIcon,
+    name: "AutoCAD",
+    style: { boxShadow: "2px 2px 4px #cb2123, -2px 2px 4px #cb2123" },
+  },
+
 ];
 
 export default technologies;

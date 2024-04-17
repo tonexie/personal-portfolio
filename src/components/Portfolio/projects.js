@@ -79,7 +79,7 @@ const projects = [
     code: "https://github.com/tonexie/avatar-character-test",
     mobileBackHeight: "550px",
     PCBackHeight: PCBackHeight,
-    warning: true,
+    warning: false,
   },
   {
     title: "Pokemon Viewer Website",

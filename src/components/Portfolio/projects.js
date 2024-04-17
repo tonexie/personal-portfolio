@@ -3,6 +3,7 @@ import fourierLabsImg from "../../assets/portfolio/fourier-labs.png";
 import g2BlogImg from "../../assets/portfolio/g2-blog.png";
 import pokemonImg from "../../assets/portfolio/pokemon-viewer.png";
 import portfolioImg from "../../assets/portfolio/personal-website.png";
+import avatarImg from "../../assets/portfolio/avatar-test.png";
 
 // default heights
 const mobileBackHeight = "500px";
@@ -68,6 +69,17 @@ const projects = [
     mobileBackHeight: mobileBackHeight,
     PCBackHeight: PCBackHeight,
     warning: false,
+  },
+  {
+    title: "Avatar Quiz Website",
+    src: avatarImg,
+    desc: "This application uses Svelte integrated with the Flowbite UI component library to deliver a fun and interactive web application. My app features a dynamic quiz platform, a results page utilizing Svelte's slug routing, an search page with API integration to a TV database, and a visually appealing credits page. ",
+    skills: ["Svelte", "Flowbite", "Tailwind", "AJAX", "JavaScript", "HTML", "CSS"],
+    demo: "https://avatar-character-quiz.netlify.app/",
+    code: "https://github.com/tonexie/avatar-character-test",
+    mobileBackHeight: "550px",
+    PCBackHeight: PCBackHeight,
+    warning: true,
   },
   {
     title: "Pokemon Viewer Website",

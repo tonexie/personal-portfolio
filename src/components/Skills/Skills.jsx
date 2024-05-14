@@ -16,7 +16,7 @@ const Skills = () => {
             Skills
           </p>
           <p className="py-6 text-xl">
-            These are the technologies that I have worked with:
+            These are the skills that I have demonstrated in work and projects:
           </p>
         </div>
 

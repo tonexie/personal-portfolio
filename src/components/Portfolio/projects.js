@@ -4,12 +4,37 @@ import g2BlogImg from "../../assets/portfolio/g2-blog.png";
 import pokemonImg from "../../assets/portfolio/pokemon-viewer.png";
 import portfolioImg from "../../assets/portfolio/personal-website.png";
 import avatarImg from "../../assets/portfolio/avatar-test.png";
+import lecturmoImg from "../../assets/portfolio/lecturmo.png";
+import GJHouseImg from "../../assets/portfolio/GJHouse.webp";
 
 // default heights
 const mobileBackHeight = "500px";
 const PCBackHeight = "480px";
 
 const projects = [
+  {
+    title: "Lecturmo - MERN Stack",
+    src: lecturmoImg,
+    desc: "Lecturmo is a student course review website enhanced with technology. It uses a dynamic QR code system for real-time attendance tracking, linked to a badge system where students obtain ranks based on attendance, displayed alongside their reviews to enhance credibility. The platform also includes AI-driven technology, leveraging OpenAI API, to generate concise summaries of course reviews, making them more accessible and informative. Additionally, Lecturmo ensures all users are verified university students by requiring registration via university email addresses, maintaining a reliable and relevant user base. Finally, there is a comprehensive account and profile management system in place.",
+    skills: [
+      "MongoDB",
+      "ExpressJs",
+      "React",
+      "NodeJs",
+      "PassportJs",
+      "MUI",
+      "AJAX",
+      "API",
+      "PR Review",
+      "HTML",
+      "CSS",
+      "GitHub",
+    ],
+    demo: "https://lecturmo.org",
+    code: "https://github.com/tonexie/lecturmon",
+    mobileBackHeight: "700px",
+    PCBackHeight: "650px",
+  },
   {
     title: "Full Stack Blog Website",
     src: g2BlogImg,
@@ -33,23 +58,6 @@ const projects = [
     mobileBackHeight: "550px",
     PCBackHeight: PCBackHeight,
     warning: true,
-  },
-  {
-    title: "Personal Portfolio Website",
-    src: portfolioImg,
-    desc: "Explore my dynamic personal portfolio website, built with React and Tailwind CSS, enhanced with fluid animations powered by Framer Motion! With a focus on modular input data, ensuring effortless updates to showcase my evolving skills and projects.",
-    skills: [
-      "React",
-      "Tailwind",
-      "Framer Motion",
-      "HTML",
-      "CSS",
-      "JavaScript",
-    ],
-    code: "https://github.com/tonexie/personal-portfolio",
-    mobileBackHeight: mobileBackHeight,
-    PCBackHeight: PCBackHeight,
-    warning: false,
   },
   {
     title: "Fourier Labs Landing Page",
@@ -82,6 +90,17 @@ const projects = [
     warning: false,
   },
   {
+    title: "Spaceship Game 2-Player",
+    src: spaceshipImg,
+    desc: "This project implements a two-player spaceship game using the Pygame library. Players control yellow and red spaceships, aiming to defeat each other by reducing their opponent's health points to zero. The game features mechanics such as spaceship movement, bullet firing, booster pickups with various effects, and winner determination.",
+    skills: ["Python", "PyGame", "OOP"],
+    demo: false,
+    code: "https://github.com/tonexie/spaceship-game",
+    mobileBackHeight: mobileBackHeight,
+    PCBackHeight: PCBackHeight,
+    warning: false,
+  },
+  {
     title: "Pokemon Viewer Website",
     src: pokemonImg,
     desc: "Developed a dynamic Pokémon viewer website, leveraging HTML, CSS, and JavaScript to bring interactivity to the platform. Implemented multiple theme selectors to enhance the user experience and employed AJAX requests and API calls to third-party applications, providing comprehensive and real-time Pokémon information. Incoporated engaging animations to increase site visual appeal",
@@ -93,12 +112,36 @@ const projects = [
     warning: true,
   },
   {
-    title: "Spaceship Game 2-Player",
-    src: spaceshipImg,
-    desc: "This project implements a two-player spaceship game using the Pygame library. Players control yellow and red spaceships, aiming to defeat each other by reducing their opponent's health points to zero. The game features mechanics such as spaceship movement, bullet firing, booster pickups with various effects, and winner determination.",
-    skills: ["Python", "PyGame", "OOP"],
-    demo: false,
-    code: "https://github.com/tonexie/spaceship-game",
+    title: "Personal Portfolio Website",
+    src: portfolioImg,
+    desc: "Explore my dynamic personal portfolio website, built with React and Tailwind CSS, enhanced with fluid animations powered by Framer Motion! With a focus on modular input data, ensuring effortless updates to showcase my evolving skills and projects.",
+    skills: [
+      "React",
+      "Tailwind",
+      "Framer Motion",
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+    code: "https://github.com/tonexie/personal-portfolio",
+    mobileBackHeight: mobileBackHeight,
+    PCBackHeight: PCBackHeight,
+    warning: false,
+  },
+  {
+    title: "G.J. Gardner Showhome",
+    src: GJHouseImg,
+    desc: "As the structural engineer for a G.J. Gardner showhome, I led the engineering design, focusing on ensuring structural integrity and compliance with safety standards, as well as coordinating the building consent. My role involved optimizing material use and implementing bespoke engineering solutions to meet both aesthetic and functional requirements.",
+    skills: [
+      "Structual Engineering",
+      "AS/NZS Codes",
+      "Site Inspections",
+      "SpaceGass",
+      "AutoCAD",
+      "Revit",
+      "Excel",
+    ],
+    demo: "https://www.gjgardner.co.nz/show-homes/hamptons-meets-paerata",
     mobileBackHeight: mobileBackHeight,
     PCBackHeight: PCBackHeight,
     warning: false,

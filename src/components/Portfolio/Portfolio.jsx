@@ -4,11 +4,6 @@ import CardFlip from "./CardFlip/CardFlip";
 import { useMediaQuery } from "react-responsive";
 import projects from "./projects";
 
-const projectsWithIDs = projects.map((projects, index) => ({
-  ...projects,
-  id: index + 1,
-}));
-
 const Portfolio = () => {
   const isDesktop = useMediaQuery({ minWidth: 768 });
 
@@ -25,9 +20,8 @@ const Portfolio = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-[0.2rem_2rem] px-0 sm:p-2">
-          {projectsWithIDs.map(
+          {projects.map(
             ({
-              id,
               title,
               src,
               desc,
@@ -37,10 +31,10 @@ const Portfolio = () => {
               mobileBackHeight,
               PCBackHeight,
               warning,
-            }) => (
+            }, index) => (
               <CardFlip
                 className="w-full h-full"
-                key={id}
+                key={index}
                 title={title}
                 front={
                   <img

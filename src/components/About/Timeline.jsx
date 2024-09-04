@@ -1,35 +1,33 @@
 import React from "react";
-import { FaRegStar } from "react-icons/fa";
+// import { FaRegStar } from "react-icons/fa";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import experiences from "./experiences"
-
-const experiencesWithIDs = experiences.map((experiences, index) => ({
-  ...experiences,
-  id: index + 1,
-}));
+import experiences from "./experiences";
+import "./Timeline.css";
 
 const Timeline = () => {
   return (
     <VerticalTimeline>
-      {experiencesWithIDs.map(
-        ({
-          id,
-          title,
-          sub,
-          desc,
-          date,
-          backCol,
-          icon,
-          iconCol,
-          arrowCol,
-          textCol,
-        }) => (
+      {experiences.map(
+        (
+          {
+            title,
+            sub,
+            desc,
+            date,
+            backCol,
+            icon,
+            iconCol,
+            arrowCol,
+            textCol,
+          },
+          index
+        ) => (
           <VerticalTimelineElement
-            key={id}
+            key={index}
             className="vertical-timeline-element--work"
             contentStyle={{ background: backCol, color: textCol }}
             contentArrowStyle={{ borderRight: `7px solid ${arrowCol}` }}
@@ -46,10 +44,10 @@ const Timeline = () => {
         )
       )}
 
-      <VerticalTimelineElement
+      {/* <VerticalTimelineElement
         iconStyle={{ background: "#ffc300", color: "#fff" }}
         icon={<FaRegStar />}
-      />
+      /> */}
     </VerticalTimeline>
   );
 };

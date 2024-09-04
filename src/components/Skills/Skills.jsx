@@ -2,11 +2,6 @@ import React from "react";
 import { bgBlackToGray } from "../../tailwind-utils";
 import technologies from "./technologies";
 
-const technologiesWithIDs = technologies.map((tech, index) => ({
-  ...tech,
-  id: index + 1,
-}));
-
 const Skills = () => {
   return (
     <div name="skills" className={bgBlackToGray}>
@@ -21,9 +16,9 @@ const Skills = () => {
         </div>
 
         <div className="max-w-screen-md m-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 text-center py-8 px-0 md:px-12 sm:px-0">
-          {technologiesWithIDs.map(({ id, src, name, style }) => (
+          {technologies.map(({ id, src, name, style }, index) => (
             <div
-              key={id}
+              key={index}
               style={style}
               className={`shadow-md hover:scale-105 duration-300 py-2 px-8 rounded-lg bg-white bg-opacity-5`}
             >

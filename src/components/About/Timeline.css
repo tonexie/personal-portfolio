@@ -2,10 +2,6 @@
   color: white !important;
 }
 
-.vertical-timeline-element-title {
-  font-weight: 700;
-}
-
 .vertical-timeline-element-date {
   color: white;
 }
@@ -16,4 +12,12 @@
 
 .vertical-timeline-element-content {
   -webkit-box-shadow: 0 0 0 #ddd;
+}
+
+.vertical-timeline-element-title {
+  font-weight: 700;
+}
+
+.vertical-timeline-element-subtitle {
+  padding-bottom: 0.5rem;
 }

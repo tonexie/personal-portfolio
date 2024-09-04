@@ -1,5 +1,4 @@
 import React from "react";
-// import { FaRegStar } from "react-icons/fa";
 import {
   VerticalTimeline,
   VerticalTimelineElement,

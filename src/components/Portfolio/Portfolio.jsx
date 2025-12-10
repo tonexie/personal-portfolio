@@ -21,17 +21,20 @@ const Portfolio = () => {
 
         <div className="grid md:grid-cols-2 gap-[0.2rem_2rem] px-0 sm:p-2">
           {projects.map(
-            ({
-              title,
-              src,
-              desc,
-              skills,
-              demo,
-              code,
-              mobileBackHeight,
-              PCBackHeight,
-              warning,
-            }, index) => (
+            (
+              {
+                title,
+                src,
+                desc,
+                skills,
+                demo,
+                code,
+                mobileBackHeight,
+                PCBackHeight,
+                warning,
+              },
+              index
+            ) => (
               <CardFlip
                 className="w-full h-full"
                 key={index}
@@ -64,8 +67,8 @@ const Portfolio = () => {
                       {warning && (
                         <p className="text-[0.7rem] text-center">
                           *Please be aware that the live demo may take up to a
-                          minute to start up, as it is hosted on a
-                          free service. Thank you for your patience.
+                          minute to start up, as it is hosted on a free service.
+                          Thank you for your patience.
                         </p>
                       )}
                       <div className="flex justify-evenly justify-self-end">

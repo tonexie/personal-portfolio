@@ -3,42 +3,39 @@ import { IoSchool } from "react-icons/io5";
 import { FaRegStar } from "react-icons/fa";
 
 const blueGradient = "linear-gradient(to bottom, #023e8a, #0077b6, #0096c7)";
-const blue = "#023e8a"
+const blue = "#023e8a";
 const greenGradient =
   "linear-gradient(to bottom, #1b4332, #2d6a4f, #40916c, #52b788)";
-const green = "#2d6a4f"
+const green = "#2d6a4f";
 const purpleGradient =
   "linear-gradient(to bottom, #070F2B, #1B1A55, #535C91, #9290C3)";
-const purple = "#1B1A55"
+const purple = "#1B1A55";
 
 const experiences = [
   {
-    title: "Most Google APIs Award | Google Developer Student Clubs Hackathon",
-    sub: "University of Auckland",
-    desc: "Won 'Most Google APIs Used' award for integrating 7 Google APIs to enhance physical health in the digital age. Built a health tracking app where a virtual pet reflects user health metrics, integrating data on sleep, heart rate, etc. Used React for the frontend, Express with Supabase and Prisma for the backend, and OAuth for authentication.",
-    date: "2024 Sep",
-    backCol: purple,
-    icon: <FaRegStar />,
-    iconCol: purpleGradient,
-    arrowCol: purple,
-    textCol: "#fff",
-  },
-  {
-    title: "People's Choice Award | AI for the Environment Hackathon | AI Forum NZ",
-    sub: "Datacom, Auckland",
-    desc: "Won People's Choice Award for our pitch on protecting biodiversity through a pest control strategy to eliminate stoats. Prototyped an AI model trained on historical and environmental data to predict stoat behavior, guiding trap placement to make pest control more effective.",
-    date: "2024 Aug",
-    backCol: purple,
-    icon: <FaRegStar />,
-    iconCol: purpleGradient,
-    arrowCol: purple,
-    textCol: "#fff",
-  },
-  {
-    title: "Graduate Teaching Assistant | Web Development",
-    sub: "University of Auckland",
-    desc: "Guided postgraduate students in mastering web development technologies as a COMPSCI 719 tutor, emphasizing foundational concepts, responsive design, frontend and backend frameworks, database management, and version control systems.",
-    date: "2024 Feb - 2024 Jun",
+    title: "Software Implementation Consultant",
+    sub: "FAST Enterprises | Wellington",
+    desc: (
+      <ul className="list-disc">
+        <li className="ml-6">
+          Rebuilt GST Groups system for NZ IRD using .NET and SQL Server,
+          automating workflows for 13,000+ businesses.
+        </li>
+        <li className="ml-6">
+          Optimized SQL query performance by 70% for employer account
+          attributes.
+        </li>
+        <li className="ml-6">
+          Consulted IRD stakeholders, translating tax policy into scalable
+          software solutions.
+        </li>
+        <li className="ml-6">
+          Contributed to a platform that issued 3.6M tax assessments and
+          disbursed $3.4B in family support.
+        </li>
+      </ul>
+    ),
+    date: "2025 Mar - Present",
     backCol: blue,
     icon: <MdOutlineWorkOutline />,
     iconCol: blueGradient,
@@ -58,11 +55,70 @@ const experiences = [
         <li className="ml-6 ">Advanced Information Security</li>
       </ul>
     ),
-    date: "2024 Feb - Present",
+    date: "2023 Jun - 2025 Feb",
     backCol: green,
     icon: <IoSchool />,
     iconCol: greenGradient,
     arrowCol: green,
+    textCol: "#fff",
+  },
+  {
+    title: "Software Development Intern",
+    sub: "Tellus | Remote",
+    desc: (
+      <ul className="list-disc">
+        <li className="ml-6">
+          Built real-time chat, review system, and performance-optimized pages
+          using Next.js and DexieDB.
+        </li>
+        <li className="ml-6">
+          Developed mobile-first UI components from Figma designs.
+        </li>
+        <li className="ml-6">
+          Worked remotely in Agile sprints using GitHub, Trello, and Slack for
+          collaboration.
+        </li>
+      </ul>
+    ),
+    date: "2024 Nov - 2025 Feb",
+    backCol: blue,
+    icon: <MdOutlineWorkOutline />,
+    iconCol: blueGradient,
+    arrowCol: blue,
+    textCol: "#fff",
+  },
+  {
+    title: "Most Google APIs Award | Google Developer Student Clubs Hackathon",
+    sub: "University of Auckland",
+    desc: "Won 'Most Google APIs Used' award for integrating 7 Google APIs to enhance physical health in the digital age. Built a health tracking app where a virtual pet reflects user health metrics, integrating data on sleep, heart rate, etc. Used React for the frontend, Express with Supabase and Prisma for the backend, and OAuth for authentication.",
+    date: "2024 Sep",
+    backCol: purple,
+    icon: <FaRegStar />,
+    iconCol: purpleGradient,
+    arrowCol: purple,
+    textCol: "#fff",
+  },
+  {
+    title:
+      "People's Choice Award | AI for the Environment Hackathon | AI Forum NZ",
+    sub: "Datacom, Auckland",
+    desc: "Won People's Choice Award for our pitch on protecting biodiversity through a pest control strategy to eliminate stoats. Prototyped an AI model trained on historical and environmental data to predict stoat behavior, guiding trap placement to make pest control more effective.",
+    date: "2024 Aug",
+    backCol: purple,
+    icon: <FaRegStar />,
+    iconCol: purpleGradient,
+    arrowCol: purple,
+    textCol: "#fff",
+  },
+  {
+    title: "Graduate Teaching Assistant | Web Development",
+    sub: "University of Auckland",
+    desc: "Guided postgraduate students in mastering web development technologies as a COMPSCI 719 tutor, emphasizing foundational concepts, responsive design, frontend and backend frameworks, database management, and version control systems.",
+    date: "2024 Feb - 2024 Jun",
+    backCol: blue,
+    icon: <MdOutlineWorkOutline />,
+    iconCol: blueGradient,
+    arrowCol: blue,
     textCol: "#fff",
   },
   {

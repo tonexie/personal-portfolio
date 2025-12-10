@@ -72,7 +72,7 @@ const projects = [
       "CSS",
       "Tailwind",
     ],
-    demo: "https://fourierlabs.io/",
+    demo: false,
     code: false,
     mobileBackHeight: mobileBackHeight,
     PCBackHeight: PCBackHeight,

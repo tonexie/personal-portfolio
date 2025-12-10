@@ -15,7 +15,6 @@ import svelteIcon from "../../assets/icons/svelte.svg";
 import autocadIcon from "../../assets/icons/autocad.svg";
 
 const technologies = [
-
   {
     src: mongoDBIcon,
     name: "MongoDB",
@@ -91,7 +90,6 @@ const technologies = [
     name: "AutoCAD",
     style: { boxShadow: "2px 2px 4px #cb2123, -2px 2px 4px #cb2123" },
   },
-
 ];
 
 export default technologies;

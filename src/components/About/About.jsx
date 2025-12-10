@@ -37,7 +37,6 @@ const About = () => {
         <h2 className="text-[1.8rem] text-center pb-4 pt-24">Timeline</h2>
         <Timeline />
       </div>
-      
     </div>
   );
 };

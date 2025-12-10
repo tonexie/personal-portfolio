@@ -55,12 +55,12 @@ const Home = () => {
                 opacity: [0, 0.1, 0.3, 0.5, 1],
               }}
               className="z-3 text-[2.3rem] sm:text-[3rem] md:text-5xl lg:text-7xl 
-              font-roboto font-extrabold sm:font-raleway sm:font-bold text-white h-[6.5rem] lg:min-h-[9rem]"
+              font-roboto font-extrabold sm:font-raleway sm:font-bold text-white h-[6.5rem]  lg:min-h-[9rem]"
             >
               <Typewriter
                 words={[
-                  "Future Software\nEngineer",
-                  "Former Structural\nEngineer",
+                  "Full\u2011time\u00A0Software\nEngineer",
+                  "Former\u00A0Structural\nEngineer",
                 ]}
                 loop={false}
                 cursor

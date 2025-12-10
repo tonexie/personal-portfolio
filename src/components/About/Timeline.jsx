@@ -12,17 +12,7 @@ const Timeline = () => {
     <VerticalTimeline>
       {experiences.map(
         (
-          {
-            title,
-            sub,
-            desc,
-            date,
-            backCol,
-            icon,
-            iconCol,
-            arrowCol,
-            textCol,
-          },
+          { title, sub, desc, date, backCol, icon, iconCol, arrowCol, textCol },
           index
         ) => (
           <VerticalTimelineElement
